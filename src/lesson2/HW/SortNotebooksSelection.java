@@ -1,4 +1,4 @@
-package lesson2.HW;
+/*package lesson2.HW;
 
 import lesson2.sort.SelectionSort;
 
@@ -33,4 +33,4 @@ public class SortNotebooksSelection extends SelectionSort {
                     .thenComparing(Notebook::getProducer);
             notebooks.sort(c);
     }
-}
+}*/

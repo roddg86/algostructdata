@@ -1,4 +1,4 @@
-package lesson2.HW;
+/*package lesson2.HW;
 
 import lombok.*;
 
@@ -29,4 +29,4 @@ public class Notebook implements Comparable<Notebook> {
         return result;
     }
 
-}
+}*/

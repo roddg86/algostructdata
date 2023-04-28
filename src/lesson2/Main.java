@@ -15,16 +15,16 @@ public class Main {
         MyArray.isRepeat = false;
         MyArray.isShuffle = true;
         final int SIZE = 50000;
-        Integer[] arr = MyArray.getArray(SIZE, 3);
+        Integer[] arr = MyArray.getArray(SIZE, 2);
 
         List<Integer> list = new ArrayList<>();
         Collections.addAll(list, arr);
 
-//        System.out.println(Arrays.toString(arr));
+//       System.out.println(Arrays.toString(arr));
 
         SpeedTest.startTime();
 
-//        BubbleSort.sort(arr); //при 50000 - 11704 / 3
+       BubbleSort.sort(arr); //при 50000 - 11704 / 3
 //        CocktailSort.sort(arr); //12185
 //        CombSort.sort(arr); // 42
 //        SelectionSort.sort(arr); //3135 / 983
@@ -38,7 +38,7 @@ public class Main {
 
         SpeedTest.endTime();
 
-//        System.out.println(Arrays.toString(arr));
+ //       System.out.println(Arrays.toString(arr));
 /*        int NUM = 40000;
         System.out.println(BinarySearch.search(arr, NUM));
         System.out.println(ExponentialSearch.search(arr, NUM));

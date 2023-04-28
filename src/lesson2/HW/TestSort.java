@@ -1,4 +1,4 @@
-package lesson2.HW;
+/*package lesson2.HW;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -19,8 +19,8 @@ public class TestSort {
 //        способ 2 - сортировка компаратором
         SortNotebooksSelection.sortLight(notebooks);
 
-/*        способ 3 - сортировка быстрая
-        SortNotebooksQuick.quickSort(notebooks);*/
+*//*        способ 3 - сортировка быстрая
+        SortNotebooksQuick.quickSort(notebooks);*//*
 
         long timeEnd = System.currentTimeMillis();
 
@@ -55,4 +55,4 @@ public class TestSort {
         return new Notebook(price, memory, producer);
     }
 
-}
+}*/
