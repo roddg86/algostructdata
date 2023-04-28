@@ -1,7 +1,9 @@
 package lesson2.sort;
 
 import java.util.Arrays;
-
+/**
+ * Сортировка выбором
+ */
 public class SelectionSort {
     public static void sort(Integer[] arr) {
         for (int i = 0; i < arr.length; i++) {

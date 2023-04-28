@@ -1,5 +1,8 @@
 package lesson2.sort;
 
+/**
+ * Сортировка подсчётом
+ */
 public class CountingSort {
     public static void sort(Integer arr[]) {
         int n = arr.length;

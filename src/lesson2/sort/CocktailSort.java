@@ -1,5 +1,8 @@
 package lesson2.sort;
 
+/**
+ * Коктельная сортировка
+ */
 public class CocktailSort {
     public static void sort( Integer[] A ){
         boolean swapped;

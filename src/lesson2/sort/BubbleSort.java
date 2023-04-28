@@ -3,6 +3,9 @@ package lesson2.sort;
 
 import java.util.Arrays;
 
+/**
+ * Сортировка пузырьком
+ */
 public class BubbleSort {
     public static void sort(Integer[] arr) {
         boolean isChange;

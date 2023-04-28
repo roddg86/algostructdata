@@ -150,8 +150,10 @@ O(n!) - фактоиальная сложность
 >Сортировка выбором
 
 **Пузырьковая сортировка**
-
+![Bubble sort.gif](src%2Flesson2%2Fgif%2FBubble%20sort.gif)
 тайминг 34:20
+
+не очень быстрая сортировка
 
 Финальная сложность алгоритма пузырьком: O(n) * O(n) => O(n^2)
 
@@ -173,3 +175,98 @@ private void change(int a, int b){
     this.arr[b] = tmp;
 }
 ```
+
+**Коктельная сортировка**
+
+[сортировки на анимации](https://algostructure.com/sorting/selectionsort.php)
+
+![Cocktail Sort.gif](src%2Flesson2%2Fgif%2FCocktail%20Sort.gif)
+
+тайминг 01:06
+
+сложность O(n^2)
+
+**Сортировка расческой**
+
+очень эффективная сортировка
+
+![Comb Sort.gif](src%2Flesson2%2Fgif%2FComb%20Sort.gif)
+
+тайминг 01:09
+
+сложность O(n^2)
+
+**Сортировка выбором**
+![Selection sort.gif](src%2Flesson2%2Fgif%2FSelection%20sort.gif)
+тайминг 01:14
+
+сложность O(n^2)
+
+в четыре раза быстрее чем пузырьковая
+
+**Сортировка вставками**
+![Insertion sort.gif](src%2Flesson2%2Fgif%2FInsertion%20sort.gif)
+тайминг 01:27
+
+сложность O(n^2)
+
+**Поразрядная сортировка**
+
+[анимация и код на java](https://algostructure.com/sorting/radixsort.php)
+
+самая лучшая сортировка для чисел
+
+![Radix sort.gif](src%2Flesson2%2Fgif%2FRadix%20sort.gif)
+тайминг 01:49
+
+сложность O(nk)
+
+```java
+// for arrays with integers from 0 to 99
+public void radixSort(int[] array) {
+     int counter = 0;
+     LinkedList<LinkedList<Integer>> allBuckets = new LinkedList<LinkedList<Integer>>();
+
+     for (int i = 0; i < 10; i++) {
+          allBuckets.addLast( new LinkedList<Integer>() );
+     }
+
+     for (int i = 0; i < array.length; i++) {
+          int j = array[ i ] % 10;
+          allBuckets.get( j ).addLast( array[ i ] );
+     }
+
+     for (int i = 0; i < 10; i++){
+          while ( !allBuckets.get( i ).isEmpty() ) {
+               array[ counter ] = allBuckets.get( i ).pollFirst();
+               counter++;
+          }
+     }
+
+     for (int i = 0; i < array.length; i++) {
+          int j = ( (int ) ( array[ i ] / 10 ) ) % 10;
+          allBuckets.get( j ).addLast( array[ i ] );
+     }
+
+     counter = 0;
+
+     for (int i = 0; i < 10; i++) {
+          for (int j = 0; j < allBuckets.get( i ).size(); j++) {
+               array[ counter ] = allBuckets.get( i ).get( j );
+               counter++;
+          }
+     }
+}
+```
+
+**Сортировка подсчетом**
+
+очень эффективная сортировка
+
+![Counting sort.gif](src%2Flesson2%2Fgif%2FCounting%20sort.gif)
+тайминг 01:56
+
+сложность O(nk)
+
+
+

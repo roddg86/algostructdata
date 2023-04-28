@@ -1,5 +1,8 @@
 package lesson2.sort;
 
+/**
+ * Сортировка расческой
+ */
 public class CombSort {
     public static <E extends Comparable<? super E>> void sort(E[] input) {
         int gap = input.length;

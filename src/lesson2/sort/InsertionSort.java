@@ -3,6 +3,9 @@ package lesson2.sort;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
+/**
+ * Сортировка вставками
+ */
 public class InsertionSort {
     public static void sort(Integer[] arr){
         for (int i = 0; i < arr.length; i++) {

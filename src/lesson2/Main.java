@@ -24,10 +24,10 @@ public class Main {
 
         SpeedTest.startTime();
 
-       BubbleSort.sort(arr); //при 50000 - 11704 / 3
+//        BubbleSort.sort(arr); //при 50000 - 11704 / 3
 //        CocktailSort.sort(arr); //12185
 //        CombSort.sort(arr); // 42
-//        SelectionSort.sort(arr); //3135 / 983
+        SelectionSort.sort(arr); //3135 / 983
 //        InsertionSort.sort(arr); // 2310 / 6
 //        CountingSort.sort(arr); // 12
 //        Arrays.sort(arr); // 33
