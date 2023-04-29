@@ -1,5 +1,8 @@
 package lesson2.search;
 
+/**
+ * Бинарный поиск
+ */
 public class BinarySearch {
     public static int search(Integer[] arr, int num2Find) {
         return search(arr, num2Find, 0, arr.length - 1);

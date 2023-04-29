@@ -1,5 +1,9 @@
 package lesson2.search;
 
+/**
+ * Экспоненциальный поиск
+ */
+
 import java.util.Objects;
 
 public class ExponentialSearch {
