@@ -1,5 +1,8 @@
 package lesson5;
 
+/**
+ * Хвостовая рекурсия
+ */
 public class Countdown {
     public static void main(String[] args) { //5 4 3 2 1
         countdown(5);

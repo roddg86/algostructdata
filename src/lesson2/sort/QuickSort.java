@@ -5,6 +5,9 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Быстрая сортировка
+ */
 public class QuickSort {
     public static List<Integer> quickSort(List<Integer> arr) {
         if (arr.isEmpty()) {

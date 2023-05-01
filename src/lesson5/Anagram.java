@@ -3,6 +3,9 @@ package lesson5;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
+/**
+ * Сложность n!
+ */
 public class Anagram {
     private Set<String> resultSet = new LinkedHashSet<>();
     private char[] chars;

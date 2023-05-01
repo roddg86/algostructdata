@@ -5,6 +5,9 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
+/**
+ * Сортировка слиянием
+ */
 public class MergeSort {
     public static <E extends Comparable<? super E>> List<E> mergeSort(List<E> m){
         if(m.size() <= 1) return m;
